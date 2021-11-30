@@ -10,15 +10,8 @@ import org.springframework.web.bind.annotation.ResponseStatus;
 import org.springframework.web.bind.annotation.RestController;
 
 @RestController
-@RequestMapping("/v1")
+@RequestMapping("/")
 public class WebhookController {
-    //@Autowired
-    //private ClienteRepository clienteRepository;
-
-    @GetMapping(value="/")
-    public String getMethodName() {
-        return "Hello world";
-    }
     @PostMapping(value="/consume")
     @ResponseStatus(HttpStatus.ACCEPTED)
     public void add(@RequestBody Object data){

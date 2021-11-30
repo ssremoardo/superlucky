@@ -1,7 +1,6 @@
 package com.superlucky.model;
 
 import java.util.Date;
-import java.util.Dictionary;
 import java.util.List;
 
 import javax.persistence.Entity;
@@ -27,6 +26,6 @@ public class Campaign {
     public List<Winner> winners;
     @OneToMany
     public List<Subscription> subscriptions;
-    //@OneToMany
-    //public Dictionary<Long,Prize> prizes;
+    @OneToMany
+    public List<Prize> prizes;
 }

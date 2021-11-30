@@ -5,10 +5,6 @@ import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
 import javax.persistence.Id;
 import javax.persistence.ManyToOne;
-import javax.persistence.OneToOne;
-
-import org.hibernate.annotations.ManyToAny;
-
 import lombok.Data;
 
 @Entity
@@ -20,8 +16,8 @@ public class Winner {
     public String name;
     @ManyToOne
     public Campaign campaign;
-    @OneToOne
+    @ManyToOne
     public Subscription subscription;
-    @OneToOne
+    @ManyToOne
     public Prize prize;
 }
