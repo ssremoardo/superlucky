@@ -63,7 +63,7 @@ function Home() {
                         <Button>Boa sorte</Button>
                         <CountClock>15:05:45</CountClock>
                     </ElementInfoEvent>
-                    <LegendStatus>ATIVO</LegendStatus>
+                    <LegendStatus>Ativo</LegendStatus>
                 </ContainerInfoEvent>
             </ContainerBlockInfo>
             <ContainerBlockInfo>
